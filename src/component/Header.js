@@ -13,7 +13,7 @@ import {
 
 const Headers=({isdarkmode,theme,setisdarkmode})=>{
     return(
-    <Header style={{backgroundColor:isdarkmode?theme.darkmode.backgroundColor:theme.defaultmode.backgroundColor}}>
+    <Header style={{elevation:2,backgroundColor:isdarkmode?theme.darkmode.backgroundColor:theme.defaultmode.backgroundColor}}>
         <StatusBar backgroundColor={isdarkmode?'black':'gray'} barStyle={'light-content'}/>
         <Left>
             <TouchableWithoutFeedback onPress={()=>setisdarkmode(!isdarkmode)}>
